@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Portfolio</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+           
+            <div class="right-side">
+                <div class="brand">
+                    Mary Shelley
+                </div>
+            </div>
+        </div>
+       
+        <div class="content-wrapper"> 
+            <div class="portfolio-items-wrapper">
+               
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/ShelleyPortrait.jpeg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            
+                        </div>
+                       
+                        <div class="subtitle"> 
+                            <h1>General Facts!</h1>
+                            <p>Name: Mary Wollstonecraft Godwin  </p>
+                            <p>Born: 08/30/1797 Died: 02/01/1851 (54)</p>
+                            <p>Parents: William Godwin, Mary Wollstonecraft</p>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/PercyPortrait.jpeg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            
+                        </div>
+
+                        <div class="subtitle"> 
+                            <h1>Husband!</h1>
+                            <p>Name: Percy Bysshe Shelley</p>
+                            <p>Born: 08/4/1792 Died: 07/08/1822 (29)</p>
+                            <p>Facts: When Mary married Percy, she was only 17!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/FrankensteinPortrait.webp)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            
+                        </div>
+                       
+                        <div class="subtitle"> 
+                            <h1>Frankenstein!</h1>
+                            <p>Publish Date: 01/1/1818</p>
+                            <p>Total Sales: $1.17 Million</p>
+                            <p>Awards: Posthumously awarded Mary Shelley into the Science Fiction Hall of Fame (2004) </p>
+                            <p>Fun Facts: Mary Shelley wrote Frankenstein when she was only 19! </p>
+                             </div>
+                    </div>
+                </div>
+               
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/Gothic.jpeg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            
+                        </div>
+                        
+                        <div class="subtitle"> 
+                            <h1>Style!</h1>
+                            <p>Mary Shelley's writing style is often described to be, Godwinian and Gotchic.</p>
+                    
+                        </div>
+                   
+                    </div>
+                </div>
+
+
+
+               
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/influence.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="subtitle">
+                        <h1>Influence!</h1>
+                        <p>Mary Shelley's novels influenced several writers and lots of popular books, here are a couple:</p>
+                        <p>The Strange Case of Dr. Jekyll & Mr. Hyde by Robert Louis Stevenson</p>
+                        <p>“The Golem” by Avram Davidson</p>
+                        <p>Frankenstein Unbound by Roger Corman</p>
+                        <p>The Casebook of Victor Frankenstein by Peter Ackroyd</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/death.avif)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="subtitle">
+                        <h1>Death!</h1>
+                        <p>Date: 02/01/1851 </p>
+                        <p>Cause of Death: Brain Tumor</p>
+                        <p>Age of Death: 54 </p>
+                        <p>Children: Percy Shelley, William Shelley,</p>
+    
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+    -->
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',()=>{
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    
+    portfolioItem.addEventListener('mouseout',()=>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
